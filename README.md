@@ -10,8 +10,6 @@ Starter template for a FastMCP 3.x server.
 
 ## Run locally
 
-If you use `uv`:
-
 MCP inspector:
 
 ```bash
