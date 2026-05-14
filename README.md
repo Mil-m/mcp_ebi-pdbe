@@ -10,7 +10,7 @@ Starter template for a FastMCP 3.x server.
 
 ## Run locally
 
-MCP inspector:
+### MCP inspector:
 
 ```bash
 nvm install 20
@@ -24,37 +24,27 @@ http://127.0.0.1:6274
 Settings:<br>
 Transport Type: STDIO<br>
 Command: /usr/local/bin/python3<br>
-Arguments: main.py<br>
+Arguments: /absolute/path/to/main.py<br>
 
 OR
-
-```bash
-python3 -m venv .venv   
-source .venv/bin/activate
-MCP_TRANSPORT=http python main.py
-```
 
 Settings:<br>
 Transport Type: Streamable HTTP<br>
 URL: http://localhost:8080/mcp
 <br>
-Arguments: main.py<br>
+Arguments: /absolute/path/to/main.py<br>
 
-```bash
-uv sync
-uv run python main.py
-```
-
-If you use your existing virtual environment:
+### Server (for Streamable HTTP MCP inspector launch):
 
 ```bash
 python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
-python3 main.py
+MCP_TRANSPORT=streamable-http python main.py
 ```
 
-## Next steps
-
-1. Replace `lookup_entry` in `main.py` with real PDBe API calls.
-2. Add more MCP tools/resources/prompts for your workflow.
-3. Connect this server to your MCP client config.
+## Usage example
+(question) "What ligands are present in 1cbs?"
+<br>or<br>
+(question) "What ligands are present?"
+(pdb_id) "1cbs"

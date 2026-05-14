@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "pdbe": {
+      "command": "/Users/mansurova/Projects/mcp_building_pdbe/.venv/bin/python",
+      "args": [
+        "/Users/mansurova/Projects/mcp_building_pdbe/main.py"
+      ],
+      "env": {
+        "MCP_TRANSPORT": "stdio",
+        "PDBE_REQUEST_TIMEOUT": "3",
+        "LLM_REQUEST_TIMEOUT": "10"
+      }
+    }
+  }
+}
