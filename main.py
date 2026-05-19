@@ -259,7 +259,6 @@ def ask_llm(
 def ask_pdbe_agent(
     question: str,
     pdb_id: str | None = None,
-    system_prompt: str = "unused-fast-mode",
     max_steps: int = 1,
 ) -> dict:
     """
