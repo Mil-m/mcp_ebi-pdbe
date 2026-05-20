@@ -47,4 +47,5 @@ MCP_TRANSPORT=streamable-http python main.py
 (question) "What ligands are present in 1cbs?"
 <br>or<br>
 (question) "What ligands are present?"
+<br>
 (pdb_id) "1cbs"
